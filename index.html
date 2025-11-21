@@ -1,22 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="contabilidadgonzalez0@gmail.com">
-    <title>Página de perfil</title>
+    <!-- Autora  -->
+    <meta name="author" content="contabilidadgonzalez0@gmail.com">
+    <!-- titulo -->
+    <title>Perfil Profesional</title>
+    <!-- Estilos css -->
     <link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-    <div class="card">
-<div class="contenido"></div>
-<img class="fotoperfil" src="static/image/casca.png" alt="fotoperfil">
-    </div>
-    <div class="footer">
-        <button>submit</button>
- </div>
- <!-- PRACTICANDO GITHUB -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+</head>
+
+<body>
+    <!-- Bloque 1: header -->
+    <header class="header">
+        <nav class="nav">
+            <h2 class="logo">Perfil</h2>
+            <!-- nav menu derecho -->
+            <div class="nav-derecha">
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="#">Encontrar Conexiones</a></li>
+                </ul>
+                <button class="btn">Cerrar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bloque 2 contenido principal -->
+    <main class="main">
+        <!-- Columna izquierda -->
+        <section class="col-izquierda">
+            <!-- bloque perfil -->
+            <div class="perfil">
+                <div class="banner"></div>
+                <img src="static/image/casca.png" alt="foto-perfil" class="foto-perfil">
+                <div class="perfil-info">
+
+                    <h1>Casca</h1>
+                    <br>
+                    <p>Banda del Halcón</p>
+                    <p class="especial">Yo sólo quería... empuñar la espada para protegerle.</p>
+                    <p>Casca es un personaje principal de Berserk. Fue el único miembro femenino en la Banda del Halcón.
+                        Juega un papel primordial en la búsqueda de Guts por matar a todos los apóstoles y los Mano de
+                        Dios.</p>
+                    <a href="#" class="edit-link">Edit profile</a>
+                    <i class="bi bi-pencil-fill"></i>
+                </div>
+            </div>
+            <!-- Bloque Educación -->
+            <div class="educacion">
+                <h2>Educación y Entrenamiento</h2>
+                <br>
+                <p>Entrenamiento Militar-Grupo de la Banda del Halcón.</p>
+                <p>Especialización en Tácticas de Batalla.</p>
+                <p>Experta en análisis de terreno, movilidad en combate y protección de tropas.</p>
+            </div>
+        </section>
+
+        <!-- Columna Derecha -->
+        <aside class="col-derecha">
+            <!-- Bloque de Solicitudes -->
+            <div class="solicitudes">
+                <h3>Solicitudes de Conexión (2)</h3>
+                <div class="solicitud">
+                    <img src="static/image/farnese.webp" alt="farnese">
+                    <span>Farnese</span>
+                    <button>✔</button>
+                    <button>✖</button>
+                </div>
+                <div class="solicitud">
+                    <img src="static/image/serpico.jpeg" alt="serpico">
+                    <span>Serpico</span>
+                    <button>✔</button>
+                    <button>✖</button>
+                </div>
+            </div>
+
+            <!-- Bloques Conexiones -->
+
+            <div class="conexiones">
+                <h3>Tus Conexiones (500+)</h3>
+                <div class="conexion">
+                    <img src="static/image/guts.jpg" alt="guts">
+                    <span>Guts</span>
+                </div>
+                <div class="conexion">
+                    <img src="static/image/farnese.webp" alt="farnese">
+                    <span>Farnese</span>
+                </div>
+                <div class="conexion">
+                    <img src="static/image/serpico.jpeg" alt="serpico">
+                    <span>Serpico</span>
+                </div>
+
+            </div>
+        </aside>
+
+    </main>
+    <!-- script JS -->
+    <script src="static/js/script.js"></script>
 
 </body>
+
 </html>
